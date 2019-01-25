@@ -1,0 +1,26 @@
+    .title{
+        position: relative;
+        font-size: 52px;
+        left: 5%;
+        width:90%;
+        height:30%;
+        color:gray;
+    }
+    .content{
+        width:80%;
+        height:500px;
+        position: relative;
+        left: 5%;
+    }
+    .addButton{
+        text-decoration: none;
+        
+    }
+    .table-data{
+        font-size:18px;
+        color:gray;
+        position: relative;
+        top:5%;
+        width:100%;
+        text-align: left;
+    }

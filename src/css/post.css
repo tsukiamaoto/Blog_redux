@@ -1,0 +1,43 @@
+.title{
+    position: relative;
+    font-size: 52px;
+    left: 5%;
+    color:grey;
+    width:80%;
+    height:100px;
+}
+.content-post{
+    width:80%;
+    position: relative;
+    left: 5%;
+    height:500px;
+}
+.input-content{
+    width: 100%;
+    size: 100%; 
+}
+.iinput-title{
+    width: 100%;
+    size: 80px;
+}
+.content-button{
+    position: relative;
+    width:100%;
+    top:50%;
+}
+.linkButton{
+    text-decoration: none;
+}
+.option{
+    position: absolute;
+    top:-10%;
+    right:0%;
+}
+.ok{
+    position: relative;
+    right:0%;
+}
+.cancel{
+    position: relative;
+    right:0%;
+}
