@@ -11,7 +11,7 @@ const port = process.env.PORT || '8080';
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 ///  GET home page ///
-app.get('/' , index);
+app.get('*' , index);
 
 /// POST request for creating post /// 
 app.post('/post/create' , post_controller.post_create_post);
@@ -29,8 +29,8 @@ app.post('/post/delete' , post_controller.post_delete_post);
 app.post('/post/update' , post_controller.post_update_post);
 
 //listen port to create a channel with front-end
-/*app.listen(port , ()=>{
+app.listen(port , ()=>{
     console.log("this port is " + port);
-});*/
+});
 
 module.exports = app;
