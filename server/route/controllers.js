@@ -20,6 +20,7 @@ exports.post_create_post = function(req , res){
 
 /// GET all data from mongoDB ///
 exports.post_getAll_get = function( req , res) {
+    console.log('search data');
     Post.find( {},function(error , docs){
         assert.equal(null , error);
         console.log('get data from mongoDB successfully');

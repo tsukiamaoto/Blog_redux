@@ -8,8 +8,8 @@ const BlogPost = new Schema({
     title: String ,
     content: String ,
     update: Date ,
-} , {collection :'post'});
+} , {collection :'posts'});
 
 // Compile model from schema
-const PostModel = mongoose.model('post', BlogPost );
+const PostModel = mongoose.model('posts', BlogPost );
 module.exports = PostModel;
