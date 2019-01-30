@@ -3,6 +3,7 @@ const express = require('express');
 const index = require('./server/route/home');
 const post_controller = require('./server/route/controllers');
 const bodyParser = require('body-parser');
+const cool = require('cool-ascii-faces');
 
 //initial express server
 const app = express();
@@ -10,7 +11,7 @@ const port = process.env.PORT || '8080';
 //analyse html message e.g.POST,PUT,DELEDE
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-
+app.get('/cool' , (req , res) => res.send(cool()));
 ///  GET home page ///
 app.get('/' , index);
 
