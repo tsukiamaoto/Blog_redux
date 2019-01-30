@@ -10,7 +10,6 @@ ReactDOM.render(
     <BrowserRouter>
         <Switch>            
             <Route exact path="/" component={Home}/>
-            <Route path="/cool" componet={Home}/>
             <Route path="/post" component={Post}/>
             <Route path="/article/:id/edit" component={Edit}/>
             <Route exact path="/article/:id" component={Article}/>

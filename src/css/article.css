@@ -28,7 +28,7 @@
     top:80%;
     width:100%;
 }
-.btn-back{
+/*.btn-back{
     font-size: 18px;
     color: #ffffff;
     background: #87cefa;
@@ -41,7 +41,7 @@
     background: #87cefa;
     border-color: #87cefa;
     transition: all 0.4s ease 0s;
-}
+}*/
 .btn-edit .btn-delete{
     position: relative;
     right: -5%;

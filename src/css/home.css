@@ -15,7 +15,7 @@
         position : relative;
         left : 5%;
     }
-    .add{
+    /*.add{
         font-size: 18px;
         color: #ffffff;
         background: #d3d3d3;
@@ -28,7 +28,7 @@
         background: #f6b93b;
         border-color: #f6b93b;
         transition: all 0.4s ease 0s;
-    }
+    }*/
     .link{
         text-decoration : none;
     }
