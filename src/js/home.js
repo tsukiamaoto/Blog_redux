@@ -2,46 +2,57 @@ import React from'react';
 import {Link} from 'react-router-dom';
 import '../css/home.css';
 
+
+
 class Home extends React.Component{
-    construcotr(props){
+
+    constructor(props){
         super(props);
-        this.state={
+        this.state = {
             loading : true , 
             error : null ,
             data : null ,
-        }
+        };
     }
     componentDidMount(){
         // load data from mongoDB
-        const response = await fetch('/post/query' , {
+        fetch('/post/queryAll' , {
             method : 'GET' ,
             headers : {
                 'Content-type' : 'application/json' , 
             },
+        }).then(response => {
+            return response.json();
+        }).then(data => {
+            this.setState({
+                loading : false ,
+                data : data ,
+            });
+        }).catch(error => {
+            this.setState({
+                loading : false ,
+                error : error ,
+            });
         });
-
-        //if(response.get )
-
     }
-
     render(){
         if(this.state.loading){
             return <span>Loading...</span>
-        } else if (this .state.error !== null){
+        } else if (this.state.error !== null){
             return <span>Error:{this.state.error}</span>
         } else {
-            //check whether it get the data from DataBase
-            console.log(this.state.data);
-            var projects = this.state.data;
-            var results = [];
+            let projects = this.state.data.items;
+            let results = [];
             // put every data into list
             projects.forEach( p => {
+                console.log(p);
                 var item = 
                     <tr>
-                        <td>p.date</td>
-                        <td>p.title</td>
-                        <td>p.author</td>
-                    </tr>
+                        <td>{p.update}</td>
+                        <td><Link to={`/article/${p._id}`} activeClassName="current">{p.title}</Link></td>
+                        <td>{p.author}</td>
+                    </tr>;
+                results.push(item);
             });
             return (
                 <div>
@@ -49,7 +60,7 @@ class Home extends React.Component{
                         <strong>Blogs</strong><hr/>
                     </div>
                     <div className = "content">
-                    <button ><Link to="/post" className="addButton">新增</Link></button>
+                    <button className= 'add'><Link to="/post" className="link">新增</Link></button>
                         <div className = 'table'>
                             <table className = 'table-data'>
                                 <tr>
@@ -57,9 +68,9 @@ class Home extends React.Component{
                                     <th>標題</th>
                                     <th>作者</th>
                                 </tr>
-                                {results}                  
-                            </table>
-                        </div>
+                                {results}                 
+                            </table>                                                        
+                        </div>                        
                     </div>
                 </div>
             );

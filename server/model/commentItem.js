@@ -1,6 +1,6 @@
 //Import the mongoose module
-var mongoose = require('mongoose');
-
+//var mongoose = require('mongoose');
+var mongoose = require('../route/connectToDB');
 //Define a schema
 const Schema = mongoose.Schema;
 const BlogPost = new Schema({
@@ -8,8 +8,8 @@ const BlogPost = new Schema({
     title: String ,
     content: String ,
     update: Date ,
-});
+} , {collection :'post'});
 
 // Compile model from schema
-const PostModel = mongoose.model('PostModel', BlogPost );
+const PostModel = mongoose.model('post', BlogPost );
 module.exports = PostModel;

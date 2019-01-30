@@ -4,11 +4,12 @@ class content extends React.Component{
         return(
             <div>
                 <h5>內容：</h5>
-                <input 
-                    className = 'input-cotent' 
+                <textarea 
+                    className = 'input-content' 
                     type="text"
-                    onChange={e => this.props.updateContent(e.target.value)}
-                />
+                    onChange={e => this.props.updateContent(e.target.value)}>
+                {this.props.currentContent}
+                </textarea>
                 <br/>
             </div>
         )

@@ -12,16 +12,18 @@
     left: 5%;
     height:500px;
 }
+.input-title{
+    width: 100%;
+    
+}
 .input-content{
     width: 100%;
-    size: 100%; 
-}
-.iinput-title{
-    width: 100%;
-    size: 80px;
+    height:100px;
 }
 .content-button{
     position: relative;
+    overflow-wrap: normal;
+    word-break: break-all;
     width:100%;
     top:50%;
 }
