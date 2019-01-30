@@ -29,6 +29,8 @@ app.post('/post/delete' , post_controller.post_delete_post);
 app.post('/post/update' , post_controller.post_update_post);
 
 //listen port to create a channel with front-end
-app.listen(port , ()=>{
+/*app.listen(port , ()=>{
     console.log("this port is " + port);
-});
+});*/
+
+module.exports = app;
