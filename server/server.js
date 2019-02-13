@@ -1,7 +1,7 @@
 /// server package ///
 const express = require('express');
-const index = require('./server/route/home');
-const post_controller = require('./server/route/controllers');
+const index = require('./route/home');
+const post_controller = require('./route/controllers');
 const bodyParser = require('body-parser');
 
 //initial express server
@@ -11,7 +11,7 @@ const port = process.env.PORT || '8080';
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 ///  GET home page ///
-app.get('*' , index);
+app.get('/' , index);
 
 /// POST request for creating post /// 
 app.post('/post/create' , post_controller.post_create_post);

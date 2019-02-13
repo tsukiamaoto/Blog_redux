@@ -7,7 +7,7 @@ exports.post_create_post = function(req , res){
         title: req.body.title,
         content: req.body.content,
         author: req.body.author,
-        update: req.body.date, 
+        update: req.body.update, 
     });
     console.log(post.title+'\n'+post.content+'\n'+post.author+'\n'+post.update+'\n');
     
@@ -31,7 +31,7 @@ exports.post_getAll_get = function( req , res) {
 /// search one data from mongoDB ///
 
 exports.post_getOne_post = function( req , res) {
-    //console.log(req.body);
+    //console.log(req.body.id);
     Post.findById( req.body.id , function( error , docs){
         assert.equal(null , error);
         console.log('search one data from mongoDB successfully');
@@ -41,7 +41,7 @@ exports.post_getOne_post = function( req , res) {
 
 // modify a data to mongoDB 
 exports.post_update_post = function(req , res ) {
-    console.log(req.body.id);
+    console.log(req.body);
 
     let post = {};
     post.title =  req.body.title;
