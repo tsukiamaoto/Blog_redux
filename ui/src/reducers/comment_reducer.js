@@ -97,7 +97,7 @@ export const editPosts = (state = initialState , action) => {
         console.log(action.payload)
             return Object.assign({} , state , {
                 isFetched: true,
-                data: action.payload
+                data: action.payload    
             })
         case 'SEARCH_FAILURE':
             return Object.assign({} , state , {
