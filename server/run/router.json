@@ -6,8 +6,8 @@
       "GET"
     ],
     "paramNames": [],
-    "path": "/post/queryAll",
-    "regexp": "/^\\/post\\/queryAll(?:\\/(?=$))?$/",
+    "path": "/post",
+    "regexp": "/^\\/post(?:\\/(?=$))?$/",
     "stack": [
       "wrappedController"
     ]
@@ -18,8 +18,8 @@
       "POST"
     ],
     "paramNames": [],
-    "path": "/post/create",
-    "regexp": "/^\\/post\\/create(?:\\/(?=$))?$/",
+    "path": "/post",
+    "regexp": "/^\\/post(?:\\/(?=$))?$/",
     "stack": [
       "wrappedController"
     ]
@@ -27,11 +27,23 @@
   {
     "name": null,
     "methods": [
-      "POST"
+      "HEAD",
+      "GET"
     ],
-    "paramNames": [],
-    "path": "/post/queryOne",
-    "regexp": "/^\\/post\\/queryOne(?:\\/(?=$))?$/",
+    "paramNames": [
+      {
+        "name": "id",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/post/:id",
+    "regexp": "/^\\/post\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
     "stack": [
       "wrappedController"
     ]
@@ -39,11 +51,22 @@
   {
     "name": null,
     "methods": [
-      "POST"
+      "DELETE"
     ],
-    "paramNames": [],
-    "path": "/post/delete",
-    "regexp": "/^\\/post\\/delete(?:\\/(?=$))?$/",
+    "paramNames": [
+      {
+        "name": "id",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/post/:id",
+    "regexp": "/^\\/post\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
     "stack": [
       "wrappedController"
     ]
@@ -51,11 +74,22 @@
   {
     "name": null,
     "methods": [
-      "POST"
+      "PUT"
     ],
-    "paramNames": [],
-    "path": "/post/update",
-    "regexp": "/^\\/post\\/update(?:\\/(?=$))?$/",
+    "paramNames": [
+      {
+        "name": "id",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/post/:id",
+    "regexp": "/^\\/post\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
     "stack": [
       "wrappedController"
     ]

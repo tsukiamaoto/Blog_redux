@@ -1,50 +1,35 @@
-        
-    .title{
-        position : relative;
-        font-size : 52px;
-        left : 5%;
-        width : 90%;
-        height : 30%;
-    }
-    .title strong{
-        color : blueviolet;
-    }
-    .content{
-        width : 80%;
-        height : 500px;
-        position : relative;
-        left : 5%;
-    }
-    /*.add{
-        font-size: 18px;
-        color: #ffffff;
-        background: #d3d3d3;
-        padding: 5px 10px;
-        border-radius: 6px;
-        display: inline-block;
-    }
-    .add:hover{
-        color: #ffffff;
-        background: #f6b93b;
-        border-color: #f6b93b;
-        transition: all 0.4s ease 0s;
-    }*/
-    .link{
-        text-decoration : none;
-    }
-    .table-data{
-        font-size : 22px;
-        color : gray;
-        position : relative;
-        top : 5%;
-        width : 100%;
-        text-align : left;
-    }
-    .table-data th{
-        padding-top : 12px;
-        padding-bottom : 12px;
-        color : blueviolet;
-    }
-    .table-data td{
-        width: 40%;
-    }
+.title {
+  position: relative;
+  font-size: 52px;
+  left: 5%;
+  width: 90%;
+  height: 30%;
+}
+.title strong {
+  color: blueviolet;
+}
+.content {
+  width: 80%;
+  height: 500px;
+  position: relative;
+  left: 5%;
+}
+.link {
+  text-decoration: none;
+}
+.table-data {
+  font-size: 22px;
+  color: gray;
+  position: relative;
+  top: 5%;
+  width: 100%;
+  text-align: left;
+}
+.table-data th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  color: blueviolet;
+}
+.table-data td {
+  width: 40%;
+}

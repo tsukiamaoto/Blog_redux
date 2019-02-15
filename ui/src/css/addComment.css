@@ -1,45 +1,44 @@
-.title{
-    position: relative;
-    font-size: 52px;
-    left: 5%;
-    color:grey;
-    width:80%;
-    height:100px;
+.title {
+  position: relative;
+  font-size: 52px;
+  left: 5%;
+  color: grey;
+  width: 80%;
+  height: 100px;
 }
-.content-post{
-    width:80%;
-    position: relative;
-    left: 5%;
-    height:500px;
+.content-post {
+  width: 80%;
+  position: relative;
+  left: 5%;
+  height: 500px;
 }
-.input-title{
-    width: 100%;
-    
+.input-title {
+  width: 100%;
 }
-.input-content{
-    width: 100%;
-    height:100px;
+.input-content {
+  width: 100%;
+  height: 100px;
 }
-.content-button{
-    position: relative;
-    overflow-wrap: normal;
-    word-break: break-all;
-    width:100%;
-    top:50%;
+.content-button {
+  position: relative;
+  overflow-wrap: normal;
+  word-break: break-all;
+  width: 100%;
+  top: 50%;
 }
-.linkButton{
-    text-decoration: none;
+.linkButton {
+  text-decoration: none;
 }
-.option{
-    position: absolute;
-    top:-10%;
-    right:0%;
+.option {
+  position: absolute;
+  top: -10%;
+  right: 0%;
 }
-.ok{
-    position: relative;
-    right:0%;
+.ok {
+  position: relative;
+  right: 0%;
 }
-.cancel{
-    position: relative;
-    right:0%;
+.cancel {
+  position: relative;
+  right: 0%;
 }

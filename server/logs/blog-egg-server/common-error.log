@@ -360,3 +360,23 @@ hostname: Wavenet-RDdeMac-mini.local
 pid: 1426
 hostname: Wavenet-RDdeMac-mini.local
 
+2019-02-15 13:47:28,037 ERROR 3261 nodejs.ClusterClientNoResponseError: client no response in 2160382ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 3261
+hostname: Wavenet-RDdeMac-mini.local
+
+2019-02-15 14:02:51,786 ERROR 3261 nodejs.ClusterClientNoResponseError: client no response in 903743ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 3261
+hostname: Wavenet-RDdeMac-mini.local
+

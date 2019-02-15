@@ -207,23 +207,19 @@
         "express-session": "^1.15.6",
         "express-validator": "^5.3.1",
         "koa": "^2.7.0",
-        "koa-router": "^7.4.0",
-        "mongoose": "^5.4.5"
+        "koa-router": "^7.4.0"
       },
       "scripts": {
         "dev": "egg-bin dev --port 8080"
       },
-      "eslintConfig": {
-        "extends": "react-app"
-      },
-      "browserslist": [
-        ">0.2%",
-        "not dead",
-        "not ie <= 11",
-        "not op_mini all"
-      ],
       "devDependencies": {
-        "egg-bin": "^4.10.0"
+        "egg-bin": "^4.10.0",
+        "eslint": "^5.13.0",
+        "eslint-config-standard": "^12.0.0",
+        "eslint-plugin-import": "^2.16.0",
+        "eslint-plugin-node": "^8.0.1",
+        "eslint-plugin-promise": "^4.0.1",
+        "eslint-plugin-standard": "^4.0.0"
       }
     },
     "baseDir": "/Users/wavenet-rd/Desktop/app/my-app/server",

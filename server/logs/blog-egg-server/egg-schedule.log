@@ -158,3 +158,13 @@
 2019-02-15 10:55:59,494 INFO 1815 [egg-schedule]: register schedule /Users/wavenet-rd/Desktop/app/my-app/server/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
 2019-02-15 10:57:37,595 INFO 1833 [egg-schedule]: register schedule /Users/wavenet-rd/Desktop/app/my-app/server/node_modules/egg-logrotator/app/schedule/clean_log.js
 2019-02-15 10:57:37,595 INFO 1833 [egg-schedule]: register schedule /Users/wavenet-rd/Desktop/app/my-app/server/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2019-02-15 12:36:03,439 INFO 3262 [egg-schedule]: register schedule /Users/wavenet-rd/Desktop/app/my-app/server/node_modules/egg-logrotator/app/schedule/clean_log.js
+2019-02-15 12:36:03,439 INFO 3262 [egg-schedule]: register schedule /Users/wavenet-rd/Desktop/app/my-app/server/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2019-02-15 12:36:03,654 INFO 3261 [Timer] /Users/wavenet-rd/Desktop/app/my-app/server/node_modules/egg-logrotator/app/schedule/clean_log.js next time will execute after 41036349ms at 2019-02-16 00:00:00.003
+2019-02-15 12:36:03,655 INFO 3261 [Timer] /Users/wavenet-rd/Desktop/app/my-app/server/node_modules/egg-logrotator/app/schedule/rotate_by_file.js next time will execute after 41037346ms at 2019-02-16 00:00:01.001
+2019-02-15 12:38:46,992 INFO 3340 [egg-schedule]: register schedule /Users/wavenet-rd/Desktop/app/my-app/server/node_modules/egg-logrotator/app/schedule/clean_log.js
+2019-02-15 12:38:46,992 INFO 3340 [egg-schedule]: register schedule /Users/wavenet-rd/Desktop/app/my-app/server/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2019-02-15 16:15:04,520 INFO 6563 [egg-schedule]: register schedule /Users/wavenet-rd/Desktop/app/my-app/server/node_modules/egg-logrotator/app/schedule/clean_log.js
+2019-02-15 16:15:04,520 INFO 6563 [egg-schedule]: register schedule /Users/wavenet-rd/Desktop/app/my-app/server/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2019-02-15 16:15:04,730 INFO 6562 [Timer] /Users/wavenet-rd/Desktop/app/my-app/server/node_modules/egg-logrotator/app/schedule/clean_log.js next time will execute after 27895273ms at 2019-02-16 00:00:00.003
+2019-02-15 16:15:04,730 INFO 6562 [Timer] /Users/wavenet-rd/Desktop/app/my-app/server/node_modules/egg-logrotator/app/schedule/rotate_by_file.js next time will execute after 27896270ms at 2019-02-16 00:00:01.000

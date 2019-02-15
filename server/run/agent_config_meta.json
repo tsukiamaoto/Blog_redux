@@ -172,18 +172,19 @@
       "express-session": "/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/egg/config/config.default.js",
       "express-validator": "/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/egg/config/config.default.js",
       "koa": "/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/egg/config/config.default.js",
-      "koa-router": "/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/egg/config/config.default.js",
-      "mongoose": "/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/egg/config/config.default.js"
+      "koa-router": "/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/egg/config/config.default.js"
     },
     "scripts": {
       "dev": "/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/egg/config/config.default.js"
     },
-    "eslintConfig": {
-      "extends": "/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/egg/config/config.default.js"
-    },
-    "browserslist": "/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/egg/config/config.default.js",
     "devDependencies": {
-      "egg-bin": "/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/egg/config/config.default.js"
+      "egg-bin": "/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/egg/config/config.default.js",
+      "eslint": "/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/egg/config/config.default.js",
+      "eslint-config-standard": "/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/egg/config/config.default.js",
+      "eslint-plugin-import": "/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/egg/config/config.default.js",
+      "eslint-plugin-node": "/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/egg/config/config.default.js",
+      "eslint-plugin-promise": "/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/egg/config/config.default.js",
+      "eslint-plugin-standard": "/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/egg/config/config.default.js"
     }
   },
   "baseDir": "/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/egg/config/config.default.js",
