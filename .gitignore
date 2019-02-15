@@ -1,7 +1,1 @@
 node_modules
-/*/logs
-/*/run
-
-./*/presttierrc
-
-./*/eslintrc.js
