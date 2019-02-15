@@ -1,3 +1,4 @@
-logs
-run
+/node_modules
+/logs
+/run
 test
