@@ -1,7 +1,7 @@
 node_modules
-logs
-run
+/*/logs
+/*/run
 
-.presttierrc
+/*/.presttierrc
 
-.eslintrc.js
+/*/.eslintrc.js
