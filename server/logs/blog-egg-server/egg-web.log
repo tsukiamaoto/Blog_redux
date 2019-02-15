@@ -930,3 +930,33 @@
 2019-02-15 10:51:19,387 INFO 1678 [egg-watcher:application] watcher start success
 2019-02-15 10:51:19,390 INFO 1678 [egg-mysql] instance[0] status OK, rds currentTime: Fri Feb 15 2019 10:51:19 GMT+0800 (GMT+08:00)
 2019-02-15 10:51:19,405 INFO 1678 [egg:core] dump config after ready, 7ms
+2019-02-15 10:55:59,454 INFO 1815 [egg:logger] init all loggers with options: {"dir":"/Users/wavenet-rd/Desktop/app/my-app/server/logs/blog-egg-server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"blog-egg-server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-02-15 10:55:59,495 INFO 1815 [egg-multipart] stream mode enable
+2019-02-15 10:55:59,495 INFO 1815 [egg-mysql] connecting root@127.0.0.1:3306/posts
+2019-02-15 10:55:59,641 INFO 1815 [egg-static] starting static serve /public/ -> /Users/wavenet-rd/Desktop/app/my-app/server/app/public
+2019-02-15 10:55:59,644 INFO 1815 [egg-security] use methodnoallow middleware
+2019-02-15 10:55:59,645 INFO 1815 [egg-security] use noopen middleware
+2019-02-15 10:55:59,646 INFO 1815 [egg-security] use nosniff middleware
+2019-02-15 10:55:59,646 INFO 1815 [egg-security] use xssProtection middleware
+2019-02-15 10:55:59,647 INFO 1815 [egg-security] use xframe middleware
+2019-02-15 10:55:59,648 INFO 1815 [egg-security] use dta middleware
+2019-02-15 10:55:59,648 INFO 1815 [egg-security] compose 6 middlewares into one security middleware
+2019-02-15 10:55:59,659 INFO 1815 [egg:core] dump config after load, 5ms
+2019-02-15 10:55:59,680 INFO 1815 [egg-watcher:application] watcher start success
+2019-02-15 10:55:59,682 INFO 1815 [egg-mysql] instance[0] status OK, rds currentTime: Fri Feb 15 2019 10:55:59 GMT+0800 (GMT+08:00)
+2019-02-15 10:55:59,689 INFO 1815 [egg:core] dump config after ready, 5ms
+2019-02-15 10:57:37,554 INFO 1833 [egg:logger] init all loggers with options: {"dir":"/Users/wavenet-rd/Desktop/app/my-app/server/logs/blog-egg-server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"blog-egg-server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-02-15 10:57:37,595 INFO 1833 [egg-multipart] stream mode enable
+2019-02-15 10:57:37,596 INFO 1833 [egg-mysql] connecting root@127.0.0.1:3306/posts
+2019-02-15 10:57:37,734 INFO 1833 [egg-static] starting static serve /public/ -> /Users/wavenet-rd/Desktop/app/my-app/server/app/public
+2019-02-15 10:57:37,737 INFO 1833 [egg-security] use methodnoallow middleware
+2019-02-15 10:57:37,738 INFO 1833 [egg-security] use noopen middleware
+2019-02-15 10:57:37,739 INFO 1833 [egg-security] use nosniff middleware
+2019-02-15 10:57:37,739 INFO 1833 [egg-security] use xssProtection middleware
+2019-02-15 10:57:37,740 INFO 1833 [egg-security] use xframe middleware
+2019-02-15 10:57:37,741 INFO 1833 [egg-security] use dta middleware
+2019-02-15 10:57:37,741 INFO 1833 [egg-security] compose 6 middlewares into one security middleware
+2019-02-15 10:57:37,751 INFO 1833 [egg:core] dump config after load, 5ms
+2019-02-15 10:57:37,770 INFO 1833 [egg-watcher:application] watcher start success
+2019-02-15 10:57:37,772 INFO 1833 [egg-mysql] instance[0] status OK, rds currentTime: Fri Feb 15 2019 10:57:37 GMT+0800 (GMT+08:00)
+2019-02-15 10:57:37,779 INFO 1833 [egg:core] dump config after ready, 5ms

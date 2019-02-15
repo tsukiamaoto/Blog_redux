@@ -4,7 +4,7 @@ exports.mysql = {
     // database configuration
     client: {
       // host
-      host: '127.0.01',
+      host: '127.0.0.1',
       // port
       port: '3306',
       // username
@@ -19,7 +19,7 @@ exports.mysql = {
     // load into agent, default is close
     agent: false,
   };
-//produce a random key
+//produce a key
 exports.keys = '123456';
 
 exports.security = {

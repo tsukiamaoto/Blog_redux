@@ -27,7 +27,7 @@ const mapDispatchToProps = (dispatch) => {
             dispatch(searchPost(id));
         } ,
         handleSubmit: payload => {
-            console.log(payload);
+            //console.log(payload);
             dispatch(editPost(payload));
         } ,
         handleClear : () => dispatch({

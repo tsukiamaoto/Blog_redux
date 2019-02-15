@@ -154,3 +154,7 @@
 2019-02-15 10:51:07,484 INFO 1663 [egg-schedule]: register schedule /Users/wavenet-rd/Desktop/app/my-app/server/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
 2019-02-15 10:51:18,860 INFO 1678 [egg-schedule]: register schedule /Users/wavenet-rd/Desktop/app/my-app/server/node_modules/egg-logrotator/app/schedule/clean_log.js
 2019-02-15 10:51:18,860 INFO 1678 [egg-schedule]: register schedule /Users/wavenet-rd/Desktop/app/my-app/server/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2019-02-15 10:55:59,494 INFO 1815 [egg-schedule]: register schedule /Users/wavenet-rd/Desktop/app/my-app/server/node_modules/egg-logrotator/app/schedule/clean_log.js
+2019-02-15 10:55:59,494 INFO 1815 [egg-schedule]: register schedule /Users/wavenet-rd/Desktop/app/my-app/server/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2019-02-15 10:57:37,595 INFO 1833 [egg-schedule]: register schedule /Users/wavenet-rd/Desktop/app/my-app/server/node_modules/egg-logrotator/app/schedule/clean_log.js
+2019-02-15 10:57:37,595 INFO 1833 [egg-schedule]: register schedule /Users/wavenet-rd/Desktop/app/my-app/server/node_modules/egg-logrotator/app/schedule/rotate_by_file.js

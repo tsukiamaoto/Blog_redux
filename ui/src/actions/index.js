@@ -1,6 +1,5 @@
 
 export const fetchPosts = ()=>{
-    //console.log(123);
     return dispatch => {   
         dispatch(requestPosts());
         return fetch('/post/queryAll' , {
