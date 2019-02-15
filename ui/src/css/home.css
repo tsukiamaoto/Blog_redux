@@ -1,0 +1,35 @@
+.title {
+  position: relative;
+  font-size: 52px;
+  left: 5%;
+  width: 90%;
+  height: 30%;
+}
+.title strong {
+  color: blueviolet;
+}
+.content {
+  width: 80%;
+  height: 500px;
+  position: relative;
+  left: 5%;
+}
+.link {
+  text-decoration: none;
+}
+.table-data {
+  font-size: 22px;
+  color: gray;
+  position: relative;
+  top: 5%;
+  width: 100%;
+  text-align: left;
+}
+.table-data th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  color: blueviolet;
+}
+.table-data td {
+  width: 40%;
+}
