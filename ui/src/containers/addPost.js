@@ -1,5 +1,5 @@
 import { connect } from 'react-redux'
-import addComments from '../components/addComment'
+import addComments from '../components/AddComment'
 import { addNewPost } from '../actions/comments'
 
 const mapStateToProps = (state) => {

@@ -1,5 +1,5 @@
 import { connect } from 'react-redux'
-import article from '../components/article'
+import article from '../components/Article'
 import { deletePost, searchPost } from '../actions/comments'
 
 const mapStateToProps = (state) => {

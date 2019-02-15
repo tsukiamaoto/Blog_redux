@@ -1,6 +1,6 @@
 import React from 'react'
-import Title from './inputTitle'
-import Content from './inputCotent'
+import Title from './InputTitle'
+import Content from './InputCotent'
 import { Link } from 'react-router-dom'
 import '../css/addComment.css'
 class Edit extends React.Component {

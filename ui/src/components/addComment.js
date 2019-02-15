@@ -1,5 +1,5 @@
-import Title from './inputTitle'
-import Content from './inputCotent'
+import Title from './InputTitle'
+import Content from './InputCotent'
 import React from 'react'
 import '../css/addComment.css'
 import { Link } from 'react-router-dom'
