@@ -6,7 +6,7 @@ const initialState = {
         title: '' ,
         author: 'anyone' ,
         content: '' ,
-        update: '' ,
+        date: '' ,
     }
 };
 

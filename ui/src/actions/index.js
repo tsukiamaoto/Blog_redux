@@ -28,6 +28,7 @@ export const requestPosts = () =>{
 
 export const receivePosts = json => {
     console.log('success');
+    console.log(json);
     return {
         type: 'SUCCESS' ,
         payload: json ,

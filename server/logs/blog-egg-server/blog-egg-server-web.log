@@ -1,0 +1,442 @@
+2019-02-14 15:39:43,708 ERROR 5324 [-/127.0.0.1/-/0ms GET /] nodejs.ER_BAD_DB_ERRORError: ER_BAD_DB_ERROR: Unknown database 'posts'
+    at Handshake.Sequence._packetToError (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Handshake.ErrorPacket (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/mysql/lib/protocol/sequences/Handshake.js:124:18)
+    at Protocol._parsePacket (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/mysql/lib/protocol/Protocol.js:278:23)
+    at Parser.write (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/mysql/lib/Connection.js:91:28)
+    at Socket.<anonymous> (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/mysql/lib/Connection.js:502:10)
+    at Socket.emit (events.js:182:13)
+    at addChunk (_stream_readable.js:283:12)
+    at readableAddChunk (_stream_readable.js:264:11)
+    --------------------
+    at Protocol._enqueue (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+    at PoolConnection.connect (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/mysql/lib/Connection.js:118:18)
+    at Pool.getConnection (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/mysql/lib/Pool.js:48:16)
+    at /Users/wavenet-rd/Desktop/app/my-app/server/node_modules/pify/index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/pify/index.js:12:10)
+    at Pool.ret [as getConnection] (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/pify/index.js:56:34)
+    at Pool.query (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/mysql/lib/Pool.js:202:8)
+    at /Users/wavenet-rd/Desktop/app/my-app/server/node_modules/pify/index.js:29:7
+    sql: select now() as currentTime;
+code: "ER_BAD_DB_ERROR"
+errno: 1049
+sqlMessage: "Unknown database 'posts'"
+sqlState: "42000"
+fatal: true
+name: "ER_BAD_DB_ERRORError"
+pid: 5324
+hostname: Wavenet-RDdeMac-mini.local
+
+2019-02-14 16:05:00,052 ERROR 5485 [-/127.0.0.1/-/9ms GET /post/queryAll] nodejs.Error: Please set config.keys first
+    at Application.get keys [as keys] (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/egg/lib/application.js:257:15)
+    at Object.get cookies [as cookies] (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/egg/app/extend/context.js:22:66)
+    at Object.get [egg-security#CSRF_SECRET] (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/egg-security/app/extend/context.js:86:33)
+    at Object.ensureCsrfSecret (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/egg-security/app/extend/context.js:97:13)
+    at csrf (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/egg-security/lib/middlewares/csrf.js:14:9)
+    at dispatch (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at /Users/wavenet-rd/Desktop/app/my-app/server/node_modules/egg-security/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/egg-core/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/egg-core/node_modules/koa-compose/index.js:42:32)
+
+pid: 5485
+hostname: Wavenet-RDdeMac-mini.local
+
+2019-02-14 17:22:13,785 ERROR 6309 [-/127.0.0.1/-/7ms GET /post/queryAll] nodejs.Error: Please set config.keys first
+    at Application.get keys [as keys] (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/egg/lib/application.js:257:15)
+    at Object.get cookies [as cookies] (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/egg/app/extend/context.js:22:66)
+    at Object.get [egg-security#CSRF_SECRET] (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/egg-security/app/extend/context.js:86:33)
+    at Object.ensureCsrfSecret (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/egg-security/app/extend/context.js:97:13)
+    at csrf (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/egg-security/lib/middlewares/csrf.js:14:9)
+    at dispatch (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at /Users/wavenet-rd/Desktop/app/my-app/server/node_modules/egg-security/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/egg-core/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/egg-core/node_modules/koa-compose/index.js:42:32)
+
+pid: 6309
+hostname: Wavenet-RDdeMac-mini.local
+
+2019-02-14 17:29:23,271 ERROR 6405 [-/127.0.0.1/-/11ms GET /post/queryAll] nodejs.Error: Please set config.keys first
+    at Application.get keys [as keys] (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/egg/lib/application.js:257:15)
+    at Object.get cookies [as cookies] (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/egg/app/extend/context.js:22:66)
+    at Object.get [egg-security#CSRF_SECRET] (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/egg-security/app/extend/context.js:86:33)
+    at Object.ensureCsrfSecret (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/egg-security/app/extend/context.js:97:13)
+    at csrf (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/egg-security/lib/middlewares/csrf.js:14:9)
+    at dispatch (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at /Users/wavenet-rd/Desktop/app/my-app/server/node_modules/egg-security/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/egg-core/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/egg-core/node_modules/koa-compose/index.js:42:32)
+
+pid: 6405
+hostname: Wavenet-RDdeMac-mini.local
+
+2019-02-14 17:31:26,633 ERROR 6435 [-/127.0.0.1/-/28ms GET /post/queryAll] nodejs.ER_NO_SUCH_TABLEError: ER_NO_SUCH_TABLE: Table 'posts.article' doesn't exist
+    at Query.Sequence._packetToError (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/mysql/lib/protocol/Protocol.js:278:23)
+    at Parser.write (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/mysql/lib/Connection.js:91:28)
+    at Socket.<anonymous> (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/mysql/lib/Connection.js:502:10)
+    at Socket.emit (events.js:182:13)
+    at addChunk (_stream_readable.js:283:12)
+    at readableAddChunk (_stream_readable.js:264:11)
+    --------------------
+    at Pool.query (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/mysql/lib/Pool.js:199:23)
+    at /Users/wavenet-rd/Desktop/app/my-app/server/node_modules/pify/index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/pify/index.js:12:10)
+    at Pool.ret [as query] (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/pify/index.js:56:34)
+    at RDSClient.proto._query (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/ali-rds/lib/client.js:34:20)
+    at RDSClient.proto.query (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/ali-rds/lib/operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/co/index.js:65:19)
+    at /Users/wavenet-rd/Desktop/app/my-app/server/node_modules/co/index.js:54:5
+    sql: SELECT * FROM `article`
+code: "ER_NO_SUCH_TABLE"
+errno: 1146
+sqlMessage: "Table 'posts.article' doesn't exist"
+sqlState: "42S02"
+index: 0
+sql: "SELECT * FROM `article`"
+name: "ER_NO_SUCH_TABLEError"
+pid: 6435
+hostname: Wavenet-RDdeMac-mini.local
+
+2019-02-14 18:25:42,247 WARN 6793 [-/127.0.0.1/-/20ms POST /post/create] invalid csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2019-02-14 18:25:42,249 WARN 6793 [-/127.0.0.1/-/22ms POST /post/create] nodejs.ForbiddenError: invalid csrf token
+    at Object.throw (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/egg-core/node_modules/koa/lib/context.js:97:11)
+    at Object.assertCsrf (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/egg-security/app/extend/context.js:157:17)
+    at csrf (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/egg-security/lib/middlewares/csrf.js:31:9)
+    at dispatch (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at /Users/wavenet-rd/Desktop/app/my-app/server/node_modules/egg-security/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/egg-core/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/egg-core/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/koa-override/index.js:38:12)
+    at dispatch (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/egg-core/node_modules/koa-compose/index.js:42:32)
+message: "invalid csrf token"
+pid: 6793
+hostname: Wavenet-RDdeMac-mini.local
+
+2019-02-14 18:30:26,674 WARN 6876 [-/127.0.0.1/-/19ms POST /post/create] invalid csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2019-02-14 18:30:26,677 WARN 6876 [-/127.0.0.1/-/21ms POST /post/create] nodejs.ForbiddenError: invalid csrf token
+    at Object.throw (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/egg-core/node_modules/koa/lib/context.js:97:11)
+    at Object.assertCsrf (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/egg-security/app/extend/context.js:157:17)
+    at csrf (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/egg-security/lib/middlewares/csrf.js:31:9)
+    at dispatch (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at /Users/wavenet-rd/Desktop/app/my-app/server/node_modules/egg-security/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/egg-core/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/egg-core/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/koa-override/index.js:38:12)
+    at dispatch (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/egg-core/node_modules/koa-compose/index.js:42:32)
+message: "invalid csrf token"
+pid: 6876
+hostname: Wavenet-RDdeMac-mini.local
+
+2019-02-14 18:32:19,012 WARN 6905 [-/127.0.0.1/-/15ms POST /post/create] invalid csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2019-02-14 18:32:19,015 WARN 6905 [-/127.0.0.1/-/17ms POST /post/create] nodejs.ForbiddenError: invalid csrf token
+    at Object.throw (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/egg-core/node_modules/koa/lib/context.js:97:11)
+    at Object.assertCsrf (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/egg-security/app/extend/context.js:157:17)
+    at csrf (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/egg-security/lib/middlewares/csrf.js:31:9)
+    at dispatch (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at /Users/wavenet-rd/Desktop/app/my-app/server/node_modules/egg-security/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/egg-core/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/egg-core/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/koa-override/index.js:38:12)
+    at dispatch (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/egg-core/node_modules/koa-compose/index.js:42:32)
+message: "invalid csrf token"
+pid: 6905
+hostname: Wavenet-RDdeMac-mini.local
+
+2019-02-14 18:34:40,036 WARN 6949 [-/127.0.0.1/-/13ms POST /post/create] invalid csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2019-02-14 18:34:40,038 WARN 6949 [-/127.0.0.1/-/15ms POST /post/create] nodejs.ForbiddenError: invalid csrf token
+    at Object.throw (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/egg-core/node_modules/koa/lib/context.js:97:11)
+    at Object.assertCsrf (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/egg-security/app/extend/context.js:157:17)
+    at csrf (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/egg-security/lib/middlewares/csrf.js:31:9)
+    at dispatch (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at /Users/wavenet-rd/Desktop/app/my-app/server/node_modules/egg-security/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/egg-core/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/egg-core/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/koa-override/index.js:38:12)
+    at dispatch (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/egg-core/node_modules/koa-compose/index.js:42:32)
+message: "invalid csrf token"
+pid: 6949
+hostname: Wavenet-RDdeMac-mini.local
+
+2019-02-14 18:37:18,967 ERROR 6973 [-/127.0.0.1/-/18ms POST /post/create] nodejs.TypeError: ctx.validate is not a function
+    at PostsController.create (/Users/wavenet-rd/Desktop/app/my-app/server/app/controller/posts.js:17:13)
+    at Object.callFn (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/koa-compose/index.js:45:18)
+    at /Users/wavenet-rd/Desktop/app/my-app/server/node_modules/@eggjs/router/lib/router.js:344:16
+    at dispatch (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/koa-compose/index.js:44:32)
+    at /Users/wavenet-rd/Desktop/app/my-app/server/node_modules/koa-compose/index.js:36:12
+
+pid: 6973
+hostname: Wavenet-RDdeMac-mini.local
+
+2019-02-14 18:38:06,601 ERROR 7009 [-/127.0.0.1/-/20ms POST /post/create] nodejs.ER_BAD_FIELD_ERRORError: ER_BAD_FIELD_ERROR: Unknown column 'author' in 'field list'
+    at Query.Sequence._packetToError (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/mysql/lib/protocol/Protocol.js:278:23)
+    at Parser.write (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/mysql/lib/Connection.js:91:28)
+    at Socket.<anonymous> (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/mysql/lib/Connection.js:502:10)
+    at Socket.emit (events.js:182:13)
+    at addChunk (_stream_readable.js:283:12)
+    at readableAddChunk (_stream_readable.js:264:11)
+    --------------------
+    at Pool.query (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/mysql/lib/Pool.js:199:23)
+    at /Users/wavenet-rd/Desktop/app/my-app/server/node_modules/pify/index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/pify/index.js:12:10)
+    at Pool.ret [as query] (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/pify/index.js:56:34)
+    at RDSClient.proto._query (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/ali-rds/lib/client.js:34:20)
+    at RDSClient.proto.query (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/ali-rds/lib/operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/co/index.js:65:19)
+    at /Users/wavenet-rd/Desktop/app/my-app/server/node_modules/co/index.js:54:5
+    sql: INSERT INTO `article`(`author`, `title`, `date`, `content`) VALUES('anyone', '生迷惘，學校考慮更名為「應用英語」，避免學生再批評課程「掛羊頭掛狗肉」。', '2019/2/14\t18:38:6', '生迷惘，學校考慮更名為「應用英語」，避免學生再批評課程「掛羊頭掛狗肉」。')
+code: "ER_BAD_FIELD_ERROR"
+errno: 1054
+sqlMessage: "Unknown column 'author' in 'field list'"
+sqlState: "42S22"
+index: 0
+sql: "INSERT INTO `article`(`author`, `title`, `date`, `content`) VALUES('anyone', '生迷惘，學校考慮更名為「應用英語」，避免學生再批評課程「掛羊頭掛狗肉」。', '2019/2/14\\t18:38:6', '生迷惘，學校考慮更名為「應用英語」，避免學生再批評課程「掛羊頭掛狗肉」。')"
+name: "ER_BAD_FIELD_ERRORError"
+pid: 7009
+hostname: Wavenet-RDdeMac-mini.local
+
+2019-02-14 18:39:37,070 ERROR 7014 [-/127.0.0.1/-/20ms POST /post/create] nodejs.ER_TRUNCATED_WRONG_VALUE_FOR_FIELDError: ER_TRUNCATED_WRONG_VALUE_FOR_FIELD: Incorrect string value: '\xE7\x94\x9F\xE8\xBF\xB7...' for column 'title' at row 1
+    at Query.Sequence._packetToError (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/mysql/lib/protocol/Protocol.js:278:23)
+    at Parser.write (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/mysql/lib/Connection.js:91:28)
+    at Socket.<anonymous> (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/mysql/lib/Connection.js:502:10)
+    at Socket.emit (events.js:182:13)
+    at addChunk (_stream_readable.js:283:12)
+    at readableAddChunk (_stream_readable.js:264:11)
+    --------------------
+    at Pool.query (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/mysql/lib/Pool.js:199:23)
+    at /Users/wavenet-rd/Desktop/app/my-app/server/node_modules/pify/index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/pify/index.js:12:10)
+    at Pool.ret [as query] (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/pify/index.js:56:34)
+    at RDSClient.proto._query (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/ali-rds/lib/client.js:34:20)
+    at RDSClient.proto.query (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/ali-rds/lib/operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/co/index.js:65:19)
+    at /Users/wavenet-rd/Desktop/app/my-app/server/node_modules/co/index.js:54:5
+    sql: INSERT INTO `article`(`author`, `title`, `date`, `content`) VALUES('anyone', '生迷惘，學校考慮更名為「應用英語」，避免學生再批評課程「掛羊頭掛狗肉」。', '2019/2/14\t18:39:37', '生迷惘，學校考慮更名為「應用英語」，避免學生再批評課程「掛羊頭掛狗肉」。')
+code: "ER_TRUNCATED_WRONG_VALUE_FOR_FIELD"
+errno: 1366
+sqlMessage: "Incorrect string value: '\\xE7\\x94\\x9F\\xE8\\xBF\\xB7...' for column 'title' at row 1"
+sqlState: "HY000"
+index: 0
+sql: "INSERT INTO `article`(`author`, `title`, `date`, `content`) VALUES('anyone', '生迷惘，學校考慮更名為「應用英語」，避免學生再批評課程「掛羊頭掛狗肉」。', '2019/2/14\\t18:39:37', '生迷惘，學校考慮更名為「應用英語」，避免學生再批評課程「掛羊頭掛狗肉」。')"
+name: "ER_TRUNCATED_WRONG_VALUE_FOR_FIELDError"
+pid: 7014
+hostname: Wavenet-RDdeMac-mini.local
+
+2019-02-14 18:40:58,814 ERROR 7048 [-/127.0.0.1/-/22ms POST /post/create] nodejs.ER_TRUNCATED_WRONG_VALUE_FOR_FIELDError: ER_TRUNCATED_WRONG_VALUE_FOR_FIELD: Incorrect string value: '\xE7\x94\x9F\xE8\xBF\xB7...' for column 'title' at row 1
+    at Query.Sequence._packetToError (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/mysql/lib/protocol/Protocol.js:278:23)
+    at Parser.write (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/mysql/lib/Connection.js:91:28)
+    at Socket.<anonymous> (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/mysql/lib/Connection.js:502:10)
+    at Socket.emit (events.js:182:13)
+    at addChunk (_stream_readable.js:283:12)
+    at readableAddChunk (_stream_readable.js:264:11)
+    --------------------
+    at Pool.query (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/mysql/lib/Pool.js:199:23)
+    at /Users/wavenet-rd/Desktop/app/my-app/server/node_modules/pify/index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/pify/index.js:12:10)
+    at Pool.ret [as query] (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/pify/index.js:56:34)
+    at RDSClient.proto._query (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/ali-rds/lib/client.js:34:20)
+    at RDSClient.proto.query (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/ali-rds/lib/operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/co/index.js:65:19)
+    at /Users/wavenet-rd/Desktop/app/my-app/server/node_modules/co/index.js:54:5
+    sql: INSERT INTO `article`(`author`, `title`, `date`, `content`) VALUES('anyone', '生迷惘，學校考慮更名為「應用英語」，避免學生再批評課程「掛羊頭掛狗肉」。', '2019/2/14\t18:40:58', '生迷惘，學校考慮更名為「應用英語」，避免學生再批評課程「掛羊頭掛狗肉」。')
+code: "ER_TRUNCATED_WRONG_VALUE_FOR_FIELD"
+errno: 1366
+sqlMessage: "Incorrect string value: '\\xE7\\x94\\x9F\\xE8\\xBF\\xB7...' for column 'title' at row 1"
+sqlState: "HY000"
+index: 0
+sql: "INSERT INTO `article`(`author`, `title`, `date`, `content`) VALUES('anyone', '生迷惘，學校考慮更名為「應用英語」，避免學生再批評課程「掛羊頭掛狗肉」。', '2019/2/14\\t18:40:58', '生迷惘，學校考慮更名為「應用英語」，避免學生再批評課程「掛羊頭掛狗肉」。')"
+name: "ER_TRUNCATED_WRONG_VALUE_FOR_FIELDError"
+pid: 7048
+hostname: Wavenet-RDdeMac-mini.local
+
+2019-02-14 18:43:16,980 ERROR 7095 [-/127.0.0.1/-/19ms POST /post/create] nodejs.ER_TRUNCATED_WRONG_VALUE_FOR_FIELDError: ER_TRUNCATED_WRONG_VALUE_FOR_FIELD: Incorrect string value: '\xE7\x94\x9F\xE8\xBF\xB7...' for column 'title' at row 1
+    at Query.Sequence._packetToError (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/mysql/lib/protocol/Protocol.js:278:23)
+    at Parser.write (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/mysql/lib/Connection.js:91:28)
+    at Socket.<anonymous> (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/mysql/lib/Connection.js:502:10)
+    at Socket.emit (events.js:182:13)
+    at addChunk (_stream_readable.js:283:12)
+    at readableAddChunk (_stream_readable.js:264:11)
+    --------------------
+    at Pool.query (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/mysql/lib/Pool.js:199:23)
+    at /Users/wavenet-rd/Desktop/app/my-app/server/node_modules/pify/index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/pify/index.js:12:10)
+    at Pool.ret [as query] (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/pify/index.js:56:34)
+    at RDSClient.proto._query (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/ali-rds/lib/client.js:34:20)
+    at RDSClient.proto.query (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/ali-rds/lib/operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/co/index.js:65:19)
+    at /Users/wavenet-rd/Desktop/app/my-app/server/node_modules/co/index.js:54:5
+    sql: INSERT INTO `article`(`author`, `title`, `date`, `content`) VALUES('anyone', '生迷惘，學校考慮更名為「應用英語」，避免學生再批評課程「掛羊頭掛狗肉」。', '2019/2/14\t18:43:16', '生迷惘，學校考慮更名為「應用英語」，避免學生再批評課程「掛羊頭掛狗肉」。')
+code: "ER_TRUNCATED_WRONG_VALUE_FOR_FIELD"
+errno: 1366
+sqlMessage: "Incorrect string value: '\\xE7\\x94\\x9F\\xE8\\xBF\\xB7...' for column 'title' at row 1"
+sqlState: "HY000"
+index: 0
+sql: "INSERT INTO `article`(`author`, `title`, `date`, `content`) VALUES('anyone', '生迷惘，學校考慮更名為「應用英語」，避免學生再批評課程「掛羊頭掛狗肉」。', '2019/2/14\\t18:43:16', '生迷惘，學校考慮更名為「應用英語」，避免學生再批評課程「掛羊頭掛狗肉」。')"
+name: "ER_TRUNCATED_WRONG_VALUE_FOR_FIELDError"
+pid: 7095
+hostname: Wavenet-RDdeMac-mini.local
+
+2019-02-14 18:45:53,016 ERROR 7145 [-/127.0.0.1/-/32ms POST /post/create] nodejs.ER_TRUNCATED_WRONG_VALUE_FOR_FIELDError: ER_TRUNCATED_WRONG_VALUE_FOR_FIELD: Incorrect string value: '\xE7\x94\x9F\xE8\xBF\xB7...' for column 'title' at row 1
+    at Query.Sequence._packetToError (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/mysql/lib/protocol/Protocol.js:278:23)
+    at Parser.write (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/mysql/lib/Connection.js:91:28)
+    at Socket.<anonymous> (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/mysql/lib/Connection.js:502:10)
+    at Socket.emit (events.js:182:13)
+    at addChunk (_stream_readable.js:283:12)
+    at readableAddChunk (_stream_readable.js:264:11)
+    --------------------
+    at Pool.query (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/mysql/lib/Pool.js:199:23)
+    at /Users/wavenet-rd/Desktop/app/my-app/server/node_modules/pify/index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/pify/index.js:12:10)
+    at Pool.ret [as query] (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/pify/index.js:56:34)
+    at RDSClient.proto._query (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/ali-rds/lib/client.js:34:20)
+    at RDSClient.proto.query (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/ali-rds/lib/operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/co/index.js:65:19)
+    at /Users/wavenet-rd/Desktop/app/my-app/server/node_modules/co/index.js:54:5
+    sql: INSERT INTO `article`(`author`, `title`, `date`, `content`) VALUES('anyone', '生迷惘，學校考慮更名為「應用英語」，避免學生再批評課程「掛羊頭掛狗肉」。', '2019/2/14\t18:45:52', '生迷惘，學校考慮更名為「應用英語」，避免學生再批評課程「掛羊頭掛狗肉」。')
+code: "ER_TRUNCATED_WRONG_VALUE_FOR_FIELD"
+errno: 1366
+sqlMessage: "Incorrect string value: '\\xE7\\x94\\x9F\\xE8\\xBF\\xB7...' for column 'title' at row 1"
+sqlState: "HY000"
+index: 0
+sql: "INSERT INTO `article`(`author`, `title`, `date`, `content`) VALUES('anyone', '生迷惘，學校考慮更名為「應用英語」，避免學生再批評課程「掛羊頭掛狗肉」。', '2019/2/14\\t18:45:52', '生迷惘，學校考慮更名為「應用英語」，避免學生再批評課程「掛羊頭掛狗肉」。')"
+name: "ER_TRUNCATED_WRONG_VALUE_FOR_FIELDError"
+pid: 7145
+hostname: Wavenet-RDdeMac-mini.local
+
+2019-02-14 18:48:37,001 ERROR 7240 [-/127.0.0.1/-/29ms POST /post/create] nodejs.ER_TRUNCATED_WRONG_VALUE_FOR_FIELDError: ER_TRUNCATED_WRONG_VALUE_FOR_FIELD: Incorrect string value: '\xE7\x94\x9F\xE8\xBF\xB7...' for column 'title' at row 1
+    at Query.Sequence._packetToError (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/mysql/lib/protocol/Protocol.js:278:23)
+    at Parser.write (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/mysql/lib/Connection.js:91:28)
+    at Socket.<anonymous> (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/mysql/lib/Connection.js:502:10)
+    at Socket.emit (events.js:182:13)
+    at addChunk (_stream_readable.js:283:12)
+    at readableAddChunk (_stream_readable.js:264:11)
+    --------------------
+    at Pool.query (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/mysql/lib/Pool.js:199:23)
+    at /Users/wavenet-rd/Desktop/app/my-app/server/node_modules/pify/index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/pify/index.js:12:10)
+    at Pool.ret [as query] (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/pify/index.js:56:34)
+    at RDSClient.proto._query (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/ali-rds/lib/client.js:34:20)
+    at RDSClient.proto.query (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/ali-rds/lib/operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/co/index.js:65:19)
+    at /Users/wavenet-rd/Desktop/app/my-app/server/node_modules/co/index.js:54:5
+    sql: INSERT INTO `article`(`title`, `content`, `date`, `author`) VALUES('生迷惘，學校考慮更名為「應用英語」，避免學生再批評課程「掛羊頭掛狗肉」。', '生迷惘，學校考慮更名為「應用英語」，避免學生再批評課程「掛羊頭掛狗肉」。', '2019/2/14\t18:48:36', 'anyone')
+code: "ER_TRUNCATED_WRONG_VALUE_FOR_FIELD"
+errno: 1366
+sqlMessage: "Incorrect string value: '\\xE7\\x94\\x9F\\xE8\\xBF\\xB7...' for column 'title' at row 1"
+sqlState: "HY000"
+index: 0
+sql: "INSERT INTO `article`(`title`, `content`, `date`, `author`) VALUES('生迷惘，學校考慮更名為「應用英語」，避免學生再批評課程「掛羊頭掛狗肉」。', '生迷惘，學校考慮更名為「應用英語」，避免學生再批評課程「掛羊頭掛狗肉」。', '2019/2/14\\t18:48:36', 'anyone')"
+name: "ER_TRUNCATED_WRONG_VALUE_FOR_FIELDError"
+pid: 7240
+hostname: Wavenet-RDdeMac-mini.local
+
+2019-02-15 10:16:36,956 ERROR 543 [-/127.0.0.1/-/0ms GET /] nodejs.ECONNREFUSEDError: connect ECONNREFUSED 127.0.0.1:3306
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1117:14)
+    --------------------
+    at Protocol._enqueue (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+    at PoolConnection.connect (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/mysql/lib/Connection.js:118:18)
+    at Pool.getConnection (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/mysql/lib/Pool.js:48:16)
+    at /Users/wavenet-rd/Desktop/app/my-app/server/node_modules/pify/index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/pify/index.js:12:10)
+    at Pool.ret [as getConnection] (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/pify/index.js:56:34)
+    at Pool.query (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/mysql/lib/Pool.js:202:8)
+    at /Users/wavenet-rd/Desktop/app/my-app/server/node_modules/pify/index.js:29:7
+    sql: select now() as currentTime;
+errno: "ECONNREFUSED"
+code: "ECONNREFUSED"
+syscall: "connect"
+address: "127.0.0.1"
+port: 3306
+fatal: true
+name: "ECONNREFUSEDError"
+pid: 543
+hostname: Wavenet-RDdeMac-mini.local
+
+2019-02-15 10:44:30,839 ERROR 1426 [-/127.0.0.1/-/4ms POST /post/update] nodejs.TypeError: Cannot convert undefined or null to object
+    at Function.keys (<anonymous>)
+    at RDSClient.proto.update (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/ali-rds/lib/operator.js:147:30)
+    at proto.update.next (<anonymous>)
+    at onFulfilled (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/co/index.js:65:19)
+    at /Users/wavenet-rd/Desktop/app/my-app/server/node_modules/co/index.js:54:5
+    at new Promise (<anonymous>)
+    at RDSClient.co (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/co/index.js:50:10)
+    at RDSClient.createPromise [as update] (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/co/index.js:30:15)
+    at ArticleService.update (/Users/wavenet-rd/Desktop/app/my-app/server/app/service/article.js:34:45)
+    at PostsController.update (/Users/wavenet-rd/Desktop/app/my-app/server/app/controller/posts.js:49:43)
+
+pid: 1426
+hostname: Wavenet-RDdeMac-mini.local
+
+2019-02-15 10:51:09,735 WARN 1663 [-/127.0.0.1/-/19ms POST /post/queryOne] missing csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2019-02-15 10:51:09,737 WARN 1663 [-/127.0.0.1/-/21ms POST /post/queryOne] nodejs.ForbiddenError: missing csrf token
+    at Object.throw (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/egg-core/node_modules/koa/lib/context.js:97:11)
+    at Object.assertCsrf (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/egg-security/app/extend/context.js:148:17)
+    at csrf (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/egg-security/lib/middlewares/csrf.js:31:9)
+    at dispatch (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at /Users/wavenet-rd/Desktop/app/my-app/server/node_modules/egg-security/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/egg-core/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/egg-core/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/koa-override/index.js:38:12)
+    at dispatch (/Users/wavenet-rd/Desktop/app/my-app/server/node_modules/egg-core/node_modules/koa-compose/index.js:42:32)
+message: "missing csrf token"
+pid: 1663
+hostname: Wavenet-RDdeMac-mini.local
+

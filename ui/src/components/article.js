@@ -4,6 +4,7 @@ import {Link} from 'react-router-dom';
 
 class Article extends React.Component{  
     componentDidMount(){
+        console.log(this.props.match.params.id);
         this.props.searchPost(this.props.match.params.id);
     }  
     render(){
@@ -24,7 +25,7 @@ class Article extends React.Component{
                         </div>
                         <div className='article-option'>
                             <button className = "btn-back"><Link className='link' to="/">返回</Link></button>
-                            <button className = "btn-edit"><Link className='link' to={`/article/${this.props.data._id}/edit`}>編輯</Link></button>
+                            <button className = "btn-edit"><Link className='link' to={`/article/${this.props.data.id}/edit`}>編輯</Link></button>
                             <button className = "btn-delete" onClick={ e => { e.preventDefault(); this.props.handleDelete(this.props.match.params.id)}}>刪除</button>
                         </div>
                     </div>

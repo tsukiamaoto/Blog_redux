@@ -22,8 +22,8 @@ class Home extends React.Component{
                 //console.log(p);
                 var item = 
                     <tr key={p.id}>
-                        <td>{p.update}</td>
-                        <td><Link to={`/article/${p._id}`}>{p.title}</Link></td>
+                        <td>{p.date}</td>
+                        <td><Link to={`/article/${p.id}`}>{p.title}</Link></td>
                         <td>{p.author}</td>
                     </tr>;
                 results.push(item);

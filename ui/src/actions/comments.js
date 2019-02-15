@@ -2,7 +2,7 @@ import history from './history';
 
 export const searchPost = id => {  
     return dispatch => {
-        dispatch(requestPost());
+        dispatch(requestPost());        
         return fetch('/post/queryOne' , {
             method: 'POST' , 
             headers: {
@@ -54,8 +54,8 @@ export const editPost = payload => {
             } , 
             body : JSON.stringify({
                 ...payload ,
-                id: payload._id ,
-                update : d.getFullYear()+"/"+(d.getMonth()+1)+"/" + d.getDate() + "\t" + d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds() , 
+                id: payload.id ,
+                date : d.getFullYear()+"/"+(d.getMonth()+1)+"/" + d.getDate() + "\t" + d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds() , 
             }) ,
         }).then(response => {
             return response.json();
@@ -63,7 +63,7 @@ export const editPost = payload => {
             if(json.success)
                 dispatch(editSuccess());
         }).then(() => {
-            history.push(`/article/${payload._id}`);
+            history.push(`/article/${payload.id}`);
         }).catch(error => {
             dispatch(editFailed(error))
         })
@@ -144,7 +144,7 @@ export const addNewPost = data => {
             body : JSON.stringify({
                 author: data.author ,
                 title: data.title,
-                update: d.getFullYear()+"/"+(d.getMonth()+1)+"/" + d.getDate() + "\t" + d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds() ,
+                date: d.getFullYear()+"/"+(d.getMonth()+1)+"/" + d.getDate() + "\t" + d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds() ,
                 content: data.content,
             }),
         }).then( response => {

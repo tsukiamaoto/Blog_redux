@@ -23,7 +23,7 @@ class Edit extends React.Component{
                         <Title updateTitle={this.props.updateTitle} currentTitle={this.props.data.title}/>
                         <Content updateContent={this.props.updateContent} currentContent={this.props.data.content}/>
                         <div className= 'content-button'>
-                            <button><Link to={`/article/${this.props.data._id}`} className="linkButton">返回</Link></button>
+                            <button><Link to={`/article/${this.props.data.id}`} className="linkButton">返回</Link></button>
                             <div className = 'option'>
                                 <button className = "ok" onClick={e => {e.preventDefault(); this.props.handleSubmit(this.props.data)}}>完成</button>       
                                 <button className = "cancel" onClick={e=> {e.preventDefault();this.props.handleClear()}}>清空</button>
