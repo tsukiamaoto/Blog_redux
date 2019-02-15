@@ -3,7 +3,7 @@ import Content from './InputCotent'
 import React from 'react'
 import '../css/addComment.css'
 import { Link } from 'react-router-dom'
-
+ 
 class Post extends React.Component {
   render () {
     return (

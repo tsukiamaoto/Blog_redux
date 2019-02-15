@@ -4,7 +4,6 @@ import { searchPost, editPost } from '../actions/comments'
 
 const mapStateToProps = (state) => {
   let payload = state.Comment.Edit
-  console.log(payload)
   return {
     isFetched: payload.isFetched,
     error: payload.error,

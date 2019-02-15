@@ -1,10 +1,9 @@
 import React from 'react'
 import '../css/article.css'
 import { Link } from 'react-router-dom'
-
+ 
 class Article extends React.Component {
   componentDidMount () {
-    console.log(this.props.match.params.id)
     this.props.searchPost(this.props.match.params.id)
   }
   render () {

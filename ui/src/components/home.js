@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import '../css/home.css'
-
+ 
 class Home extends React.Component {
   componentDidMount () {
     this.props.fetchposts()

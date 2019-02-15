@@ -47,7 +47,6 @@ export const AddPosts = (state = initialState, action) => {
 export const EditPosts = (state = initialState, action) => {
   switch (action.type) {
     case 'UPDATE_TITLE':
-      console.log(action.payload)
       return Object.assign({}, state, {
         data: {
           ...state.data,
@@ -86,7 +85,6 @@ export const EditPosts = (state = initialState, action) => {
         isFetched: false
       })
     case 'SEARCH_SUCCESS':
-      console.log(action.payload)
       return Object.assign({}, state, {
         isFetched: true,
         data: action.payload

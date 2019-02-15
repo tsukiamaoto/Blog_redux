@@ -32,7 +32,6 @@ class PostsController extends Controller {
   async getOne () {
     const { ctx, service } = this
     const id = ctx.params.id
-    console.log(id)
     const res = await service.article.getOne(id)
     ctx.body = { items: res }
     // ctx.status = 200;

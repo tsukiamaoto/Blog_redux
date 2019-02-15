@@ -3,6 +3,7 @@ import Title from './InputTitle'
 import Content from './InputCotent'
 import { Link } from 'react-router-dom'
 import '../css/addComment.css'
+
 class Edit extends React.Component {
   componentDidMount () {
     this.props.searchPost(this.props.match.params.id)
