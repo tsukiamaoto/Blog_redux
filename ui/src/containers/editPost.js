@@ -1,6 +1,12 @@
 import { connect } from 'react-redux'
 import editComments from '../components/EditComment'
-import { searchPost, editPost } from '../actions/comments'
+import {
+  fetchSearchPost,
+  fetchEditedPost,
+  updateTitle,
+  updateContent,
+  clear
+} from '../actions'
 
 const mapStateToProps = (state) => {
   let payload = state.Comment.Edit
@@ -11,29 +17,13 @@ const mapStateToProps = (state) => {
   }
 }
 
-const mapDispatchToProps = (dispatch) => {
+const mapDispatchToProps = () => {
   return {
-    updateTitle: (title) =>
-      dispatch({
-        type: 'UPDATE_TITLE',
-        payload: title
-      }),
-    updateContent: (content) =>
-      dispatch({
-        type: 'UPDATE_CONTENT',
-        payload: content
-      }),
-    searchPost: (id) => {
-      dispatch(searchPost(id))
-    },
-    handleSubmit: (payload) => {
-      // console.log(payload);
-      dispatch(editPost(payload))
-    },
-    handleClear: () =>
-      dispatch({
-        type: 'CLEAR'
-      })
+    updateTitle: (title) => updateTitle(title),
+    updateContent: (content) => updateContent(content),
+    searchPost: (id) => fetchSearchPost(id),
+    handleSubmit: (payload) => fetchEditedPost(payload),
+    handleClear: () => clear()
   }
 }
 

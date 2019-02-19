@@ -1,6 +1,6 @@
 import { connect } from 'react-redux'
 import article from '../components/Article'
-import { deletePost, searchPost } from '../actions/comments'
+import { fetchDeletedPost, fetchSearchPost } from '../actions'
 
 const mapStateToProps = (state) => {
   let payload = state.Comment.Edit
@@ -11,14 +11,10 @@ const mapStateToProps = (state) => {
   }
 }
 
-const mapDispatchToProps = (dispatch) => {
+const mapDispatchToProps = () => {
   return {
-    searchPost: (id) => {
-      dispatch(searchPost(id))
-    },
-    handleDelete: (id) => {
-      dispatch(deletePost(id))
-    }
+    searchPost: (id) => fetchSearchPost(id),
+    handleDelete: (id) => fetchDeletedPost(id)
   }
 }
 

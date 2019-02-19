@@ -1,3 +1,5 @@
+import * as types from '../actions/types'
+
 const initialState = {
   isFetched: false,
   error: '',
@@ -10,8 +12,7 @@ const initialState = {
   }
 }
 
-export const AddPosts = (state = initialState, action) => {
-  // console.log(state);
+export const AddPosts = (state = initialState, action) => {  
   switch (action.type) {
     case 'UPDATE_TITLE':
       return Object.assign({}, state, {
@@ -27,15 +28,15 @@ export const AddPosts = (state = initialState, action) => {
           content: action.payload
         }
       })
-    case 'SENDING':
+    case types.REQUESTED_ADDED_POST:
       return Object.assign({}, state, {
         isFetched: false
       })
-    case 'SEND_SUCCESS':
+    case types.RECEIVED_ADDED_POST:
       return Object.assign({}, state, {
         isFetched: true
       })
-    case 'SEND_FAILURE':
+    case types.ADDED_FAILED_POST:
       return Object.assign({}, state, {
         error: action.payload.error
       })
@@ -68,28 +69,28 @@ export const EditPosts = (state = initialState, action) => {
           content: ''
         }
       })
-    case 'SENDING_EDITED_POST':
+    case types.REQUESTED_EDITED_POST:
       return Object.assign({}, state, {
         isFetched: false
       })
-    case 'SENDING_EDITED_SUCCESS':
+    case types.RECEIVED_EDITED_POST:
       return Object.assign({}, state, {
         isFetched: true
       })
-    case 'SENDING_EDITED_FAILURE':
+    case types.EDITED_FAILED_POST:
       return Object.assign({}, state, {
         error: action.payload
       })
-    case 'SEARCH_REQUEST':
+    case types.REQUESTED_SEARCH_POST:
       return Object.assign({}, state, {
         isFetched: false
       })
-    case 'SEARCH_SUCCESS':
+    case types.RECEIVED_SEARCH_POST:
       return Object.assign({}, state, {
         isFetched: true,
         data: action.payload
       })
-    case 'SEARCH_FAILURE':
+    case types.SEARCH_FAILED_POST:
       return Object.assign({}, state, {
         error: action.payload
       })
@@ -100,15 +101,15 @@ export const EditPosts = (state = initialState, action) => {
 
 export const DeletePosts = (state = initialState, action) => {
   switch (action.type) {
-    case 'DELETE_REQUEST':
+    case types.REQUESTED_DELETED_POST:
       return Object.assign({}, state, {
         isFetched: false
       })
-    case 'DELETE_SUCCESS':
+    case types.RECEIVED_DELETED_POST:
       return Object.assign({}, state, {
         isFetched: true
       })
-    case 'DELETE_FAILURE':
+    case types.DELETED_FAILED_POST:
       return Object.assign({}, state, {
         error: action.payload
       })

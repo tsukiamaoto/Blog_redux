@@ -2,7 +2,7 @@ import React from 'react'
 import { Router, Switch, Route } from 'react-router-dom'
 import Home from '../containers/postList'
 import Post from '../containers/addPost'
-import history from '../actions/history'
+import history from '../store/history'
 import Article from '../containers/article'
 import Edit from '../containers/editPost'
 const App = () => (

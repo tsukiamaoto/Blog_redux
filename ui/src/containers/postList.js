@@ -1,6 +1,6 @@
 import { connect } from 'react-redux'
 import Home from '../components/Home'
-import { fetchPosts } from '../actions'
+import { searchAllPost } from '../actions'
 
 const mapStateToProps = (state) => {
   let payload = state.CommentList
@@ -11,11 +11,9 @@ const mapStateToProps = (state) => {
   }
 }
 
-const mapDispatchToProps = (dispatch) => {
+const mapDispatchToProps = () => {
   return {
-    fetchposts: () => {
-      dispatch(fetchPosts())
-    }
+    fetchposts: () => searchAllPost()
   }
 }
 
